@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 
 <descriptors>
-	<descriptor id="org.springframework.utility" kind="template" local="false" name="Simple Spring4 Utility Project" size="9592" url="https://raw.githubusercontent.com/perryhg/springmvc-createproject-templates/master/spring4util-1.0.0.zip" version="1.0.0" requiresbundle="org.eclipse.m2e.core">
+	<descriptor id="org.springframework.utility" kind="template" local="false" name="Simple Spring4 Utility Project" size="10073" url="https://raw.githubusercontent.com/perryhg/springmvc-createproject-templates/master/spring4util-1.0.0.zip" version="1.0.1" requiresbundle="org.eclipse.m2e.core">
 	<description>A simple jar project that has some Spring configuration and an integration test</description>
 	</descriptor>
-   <descriptor id="springmvc4.template" kind="template" local="false" name="Spring MVC4 Template" size="11713" url="https://raw.githubusercontent.com/perryhg/springmvc-createproject-templates/master/springmvc4.templates.1.0.0.zip" version="1.0.0">
+   <descriptor id="springmvc4.template" kind="template" local="false" name="Spring MVC4 Template" size="12159" url="https://raw.githubusercontent.com/perryhg/springmvc-createproject-templates/master/springmvc4.templates.1.0.0.zip" version="1.0.1">
       <description>A new Spring MVC web application development project</description>
    </descriptor>
 </descriptors>
