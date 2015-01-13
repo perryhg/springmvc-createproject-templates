@@ -25,7 +25,7 @@ def buildGUI(){
 					textField.setPreferredSize( new Dimension( 200, 24 ) )
 				}
 			}
-			panel(constraints: BL.SOUTH){
+			panel(constraints: BL.CENTER){
 				button(text:'Extract',
 					actionPerformed: {
 						//count++;
