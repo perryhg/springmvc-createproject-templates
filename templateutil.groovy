@@ -2,7 +2,7 @@ import java.nio.file.*
 import java.util.zip.*
 import groovy.transform.Field
 
-@Field String zipfilename = 'springmvc4.templates.1.0.0.zip'
+@Field String zipfilename = 'springmvc4.templates.1.1.0.zip'
 @Field String[] zipEntryNames = ['template.xml', 'template.zip', 'wizard.json']
 
 void extractZipContent(inputStream, name)
@@ -111,7 +111,7 @@ void readVersionDesc()
 {
 	String fileName = 'descriptor4.xml'
 	def x = new XmlParser().parseText(new File(fileName).text)
-	def result = x.find{ it.@id=="springmvc4.template" }
+	def result = x.find{ it.@id=="springmvc41.template" }
 	println result.@size
 	println result.@version
 }
@@ -120,7 +120,7 @@ String readVersionTmpl()
 {
 	String fileName = 'template.xml'
 	def x = new XmlParser().parseText(new File(fileName).text)
-	def result = x.find{ it.@id=="springmvc4.template" }
+	def result = x.find{ it.@id=="springmvc41.template" }
 	return result.@version
 }
 
@@ -129,7 +129,7 @@ void writeVersionDesc(versionStr, fileName)
 	//String fileName = 'descriptor4.xml'
 	File xmlFile = new File(fileName)
 	def x = new XmlParser().parseText(xmlFile.text)
-	def result = x.find{ it.@id=="springmvc4.template" }
+	def result = x.find{ it.@id=="springmvc41.template" }
 	//println result.@size
 	//println result.@version
 	//result.@version = "1.0.6"
@@ -147,7 +147,7 @@ void writeVersionTmpl(versionStr)
 	String fileName = 'template.xml'
 	File xmlFile = new File(fileName)
 	def x = new XmlParser().parseText(xmlFile.text)
-	def result = x.find{ it.@id=="springmvc4.template" }
+	def result = x.find{ it.@id=="springmvc41.template" }
 	//println result.@version
 	result.@version=versionStr
 	String xmlstr = buildXml(x)
@@ -177,7 +177,7 @@ void updateSizeDesc(sizeStr, fileName)
 	//String fileName = 'descriptor4.xml'
 	File xmlFile = new File(fileName)
 	def x = new XmlParser().parseText(xmlFile.text)
-	def result = x.find{ it.@id=="springmvc4.template" }
+	def result = x.find{ it.@id=="springmvc41.template" }
 	//println result.@size
 	//println result.@version
 	//result.@version = "1.0.6"
