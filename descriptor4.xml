@@ -27,7 +27,11 @@
       
       
       
+      
+      
       A simple jar project that has some Spring configuration and an integration test
+    
+    
     
     
     
@@ -82,7 +86,11 @@
       
       
       
+      
+      
       A new Spring MVC web application development project
+    
+    
     
     
     
@@ -110,7 +118,7 @@
     
     </description>
   </descriptor>
-  <descriptor id="springmvc41.template" kind="template" local="false" name="Spring MVC4 Template with annotation" size="20032" url="https://raw.githubusercontent.com/perryhg/springmvc-createproject-templates/master/springmvc4.templates.1.1.0.zip" version="1.0.4">
+  <descriptor id="springmvc41.template" kind="template" local="false" name="Spring MVC4 Template with annotation" size="20714" url="https://raw.githubusercontent.com/perryhg/springmvc-createproject-templates/master/springmvc4.templates.1.1.0.zip" version="1.0.5">
     <description>
       
       
@@ -137,7 +145,11 @@
       
       
       
+      
+      
       A new Spring MVC web application development project
+    
+    
     
     
     
