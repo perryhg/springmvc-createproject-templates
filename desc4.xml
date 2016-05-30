@@ -32,7 +32,11 @@
       
       
       
+      
+      
       A simple jar project that has some Spring configuration and an integration test
+    
+    
     
     
     
@@ -97,7 +101,11 @@
       
       
       
+      
+      
       A new Spring MVC web application development project
+    
+    
     
     
     
@@ -130,7 +138,7 @@
     
     </description>
   </descriptor>
-  <descriptor id="springmvc41.template" kind="template" local="false" name="Spring MVC4 Template with Annotation" size="126108" url="http://localhost:8090/springmvc4.templates.1.1.0.zip" version="1.0.9">
+  <descriptor id="springmvc41.template" kind="template" local="false" name="Spring MVC4 Template with Annotation" size="128087" url="http://localhost:8090/springmvc4.templates.1.1.0.zip" version="1.1.0">
     <description>
       
       
@@ -162,7 +170,11 @@
       
       
       
+      
+      
       A new Spring MVC web application development project
+    
+    
     
     
     
