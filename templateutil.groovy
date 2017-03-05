@@ -1,5 +1,6 @@
 import java.nio.file.*
 import java.util.zip.*
+import groovy.xml.*
 import groovy.transform.Field
 
 @Field String zipfilename = 'springmvc4.templates.1.1.0.zip'
@@ -128,16 +129,17 @@ void writeVersionDesc(versionStr, fileName)
 {
 	//String fileName = 'descriptor4.xml'
 	File xmlFile = new File(fileName)
-	def x = new XmlParser().parseText(xmlFile.text)
-	def result = x.find{ it.@id=="springmvc41.template" }
+	//def x = new XmlParser().parseText(xmlFile.text)
+	def x = new XmlSlurper().parse(xmlFile)
+	def result = x.'**'.find{ it.@id=="springmvc41.template" }
 	//println result.@size
 	//println result.@version
 	//result.@version = "1.0.6"
 	result.@version=versionStr
-	String xmlDesc = '<?xml version="1.0" encoding="UTF-8" standalone="no"?>\n'
+	//String xmlDesc = '<?xml version="1.0" encoding="UTF-8" standalone="no"?>\n'
 	String xmlstr = buildXml(x)
 	def writer = xmlFile.newWriter()
-	writer << xmlDesc
+	//writer << xmlDesc
 	writer << xmlstr
 	writer.close()
 }
@@ -146,23 +148,36 @@ void writeVersionTmpl(versionStr)
 {
 	String fileName = 'template.xml'
 	File xmlFile = new File(fileName)
-	def x = new XmlParser().parseText(xmlFile.text)
-	def result = x.find{ it.@id=="springmvc41.template" }
+	//def x = new XmlParser().parseText(xmlFile.text)
+	def x = new XmlSlurper().parse(xmlFile)
+	
+	def result = x.'**'.find{
+		println it.name
+		it.@id=="springmvc41.template"
+	}
 	//println result.@version
 	result.@version=versionStr
-	String xmlstr = buildXml(x)
+	String xmlstr = trimxml(buildXml(x))
 
 	def writer = xmlFile.newWriter()
 	writer << xmlstr
 	writer.close()
 }
 
+String trimxml(strsrc)
+{
+	println strsrc
+	return strsrc
+}
+
 String buildXml(node)
 {
-	def writer = new StringWriter()
-	new XmlNodePrinter(new PrintWriter(writer)).print(node)
-	def result1 = writer.toString()
-	return result1
+	//def writer = new StringWriter()
+	//new XmlNodePrinter(new PrintWriter(writer)).print(node)
+	//def result1 = writer.toString()
+	
+	//return result1
+	return XmlUtil.serialize(node);
 }
 
 void updateVersion(String versionStr)
