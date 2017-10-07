@@ -207,7 +207,7 @@ void updateSizeDesc(sizeStr, fileName)
 	String xmlDesc = '<?xml version="1.0" encoding="UTF-8" standalone="no"?>\n'
 	String xmlstr = buildXml(x)
 	def writer = xmlFile.newWriter()
-	writer << xmlDesc
+	//writer << xmlDesc
 	writer << xmlstr
 	writer.close()
 }

@@ -42,8 +42,8 @@ void writeVersionDesc(versionStr, fileName)
 		it.replaceBody(trimmedText)
 	}
 	String xmlstr = buildXml(x)
+	//println(xmlstr)
 	def writer = xmlFile.newWriter()
-	//writer << xmlDesc
 	writer << xmlstr
 	writer.close()
 }
