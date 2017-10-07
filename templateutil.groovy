@@ -137,6 +137,18 @@ void writeVersionDesc(versionStr, fileName)
 	//result.@version = "1.0.6"
 	result.@version=versionStr
 	//String xmlDesc = '<?xml version="1.0" encoding="UTF-8" standalone="no"?>\n'
+	def dList = x.descriptor.description;
+	println dList.size()
+	dList.each{
+		//println '--------'
+		//println it.getClass().getName()
+		//println it.name()
+		//println it.text()
+		//println it
+		def trimmedText = it.text().trim();
+		//println trimmedText
+		it.replaceBody(trimmedText)
+	}
 	String xmlstr = buildXml(x)
 	def writer = xmlFile.newWriter()
 	//writer << xmlDesc
@@ -172,11 +184,6 @@ String trimxml(strsrc)
 
 String buildXml(node)
 {
-	//def writer = new StringWriter()
-	//new XmlNodePrinter(new PrintWriter(writer)).print(node)
-	//def result1 = writer.toString()
-	
-	//return result1
 	return XmlUtil.serialize(node);
 }
 
