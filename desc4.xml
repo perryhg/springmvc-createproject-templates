@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?><descriptors>
-  <descriptor id="org.springframework.utility" requiresbundle="org.eclipse.m2e.core" name="Simple Spring4 Utility Project" local="false" kind="template" url="https://raw.githubusercontent.com/perryhg/springmvc-createproject-templates/master/spring4util-1.0.0.zip" size="10073" version="1.0.1">
+  <descriptor requiresbundle="org.eclipse.m2e.core" size="10073" kind="template" name="Simple Spring4 Utility Project" id="org.springframework.utility" version="1.0.1" url="https://raw.githubusercontent.com/perryhg/springmvc-createproject-templates/master/spring4util-1.0.0.zip" local="false">
     <description>A simple jar project that has some Spring configuration and an integration test</description>
   </descriptor>
-  <descriptor id="springmvc4.template" name="Spring MVC4 Template" local="false" kind="template" url="http://localhost:8090/springmvc4.templates.1.0.0.zip" size="16709" version="1.0.6">
+  <descriptor size="16709" kind="template" name="Spring MVC4 Template" id="springmvc4.template" version="1.0.6" url="http://localhost:8090/springmvc4.templates.1.0.0.zip" local="false">
     <description>A new Spring MVC web application development project</description>
   </descriptor>
-  <descriptor id="springmvc41.template" name="Spring MVC4 Template with Annotation" local="false" kind="template" url="http://localhost:8090/springmvc4.templates.1.1.0.zip" size="129745" version="1.1.9">
+  <descriptor size="130382" kind="template" name="Spring MVC4 Template with Annotation" id="springmvc41.template" version="1.1.10" url="http://localhost:8090/springmvc4.templates.1.1.0.zip" local="false">
     <description>A new Spring MVC web application development project</description>
   </descriptor>
 </descriptors>
