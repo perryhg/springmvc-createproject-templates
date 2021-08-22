@@ -217,6 +217,7 @@ void updateSize()
 	File zipTFile = new File(zipfilename)
 	String sizeStr = String.valueOf( zipTFile.size() )
 	updateSizeDesc(sizeStr, 'descriptor4.xml')
+	updateSizeDesc(sizeStr, 'descriptor4e.xml')
 	updateSizeDesc(sizeStr, 'desc4.xml')
 }
 

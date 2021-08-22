@@ -5,7 +5,7 @@
   <descriptor size="16709" kind="template" name="Spring MVC4 Template" id="springmvc4.template" version="1.0.6" url="http://localhost:8090/springmvc4.templates.1.0.0.zip" local="false">
     <description>A new Spring MVC web application development project</description>
   </descriptor>
-  <descriptor size="130901" kind="template" name="Spring MVC4 Template with Annotation" id="springmvc41.template" version="1.1.12" url="http://localhost:8090/springmvc4.templates.1.1.0.zip" local="false">
+  <descriptor size="131024" kind="template" name="Spring MVC4 Template with Annotation" id="springmvc41.template" version="1.1.14" url="http://localhost:8090/springmvc4.templates.1.1.0.zip" local="false">
     <description>A new Spring MVC web application development project</description>
   </descriptor>
 </descriptors>
