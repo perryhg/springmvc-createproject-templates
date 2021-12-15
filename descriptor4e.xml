@@ -5,7 +5,7 @@
   <descriptor size="16709" kind="template" name="Spring MVC4 Template" id="springmvc4.template" version="1.0.6" local="false" url="https://gitee.com/perryhg/springmvc-createproject-templates/raw/master/springmvc4.templates.1.0.0.zip">
     <description>A new Spring MVC web application development project</description>
   </descriptor>
-  <descriptor size="131024" kind="template" name="Spring MVC4 Template with annotation" id="springmvc41.template" version="1.1.13" local="false" url="https://gitee.com/perryhg/springmvc-createproject-templates/raw/master/springmvc4.templates.1.1.0.zip">
+  <descriptor size="131020" kind="template" name="Spring MVC4 Template with annotation" id="springmvc41.template" version="1.1.13" local="false" url="https://gitee.com/perryhg/springmvc-createproject-templates/raw/master/springmvc4.templates.1.1.0.zip">
     <description>A new Spring MVC web application development project</description>
   </descriptor>
 </descriptors>
